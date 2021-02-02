@@ -10,5 +10,5 @@ CREATE TABLE artists(
 CREATE TABLE albums(
     id SERIAL PRIMARY KEY, 
     name VARCHAR(255) NOT NULL,
-    artist_id INT REFERENCE artists(id)
-)
+    artist_id INT REFERENCES artists(id)
+);
